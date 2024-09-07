@@ -1,5 +1,4 @@
 import { BalanceSheet } from "./modules/balanceSheet/BalanceSheet"
-import { Box } from "./modules/core/components"
 import { DataInformation } from "./modules/dataInformation/DataInformation"
 import { IncomeExpense } from "./modules/incomeExpense/IncomeExpense"
 import { TransactionForm } from "./modules/transactionForm/TransactionForm"
