@@ -5,7 +5,7 @@ export const schema = z.object({
   product: z.string().min(1, "El campo no puede estar vacío"),
   money: z.preprocess(
     (val) => (typeof val === "string" ? parseFloat(val) : val),
-    z.number({ invalid_type_error: "El valor no es un número" }).min(1, "El monto no puede ser negativo")
+    z.number({ invalid_type_error: "El valor no es un número" }).min(1, "El monto no puede ser '0' o negativo")
   ),
 });
 

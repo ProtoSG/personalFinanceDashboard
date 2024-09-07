@@ -23,7 +23,7 @@ export const InputForm = ({ name, placeholder, control, label, type, error }: In
               type={type}
               placeholder={placeholder}
               {...field}
-              className={`border-2 border-lime-800 w-full rounded-md pl-2 py-2 bg-lime-100 focus:outline-none`}
+              className={`border-2 border-gray-300 w-full rounded-md pl-2 py-2 focus:outline-none`}
             />
           }
         />

@@ -21,7 +21,7 @@ export const BalanceSheet = () => {
     datasets: [
       {
         data: [expense, income],
-        backgroundColor: ["#365314", "#65a30d"],
+        backgroundColor: ["#e5e7eb", "#000000"],
         hoverOffset: 6
       },
     ]

@@ -7,7 +7,7 @@ import { ItemModel } from "./models/item.model"
 import { useItem } from "./hooks/useItem"
 
 export const TransactionForm = () => {
-  const { control, handleSubmit, formState: { errors } } = useForm<FormValues>({
+  const { control, handleSubmit, formState: { errors }, reset } = useForm<FormValues>({
     resolver: zodResolver(schema),
     defaultValues: {
       type: "gasto",
@@ -27,6 +27,8 @@ export const TransactionForm = () => {
     } else {
       setIncome(item.money)
     }
+
+    reset()
   }
 
   return (
@@ -38,8 +40,8 @@ export const TransactionForm = () => {
           <InputForm name="money" label="Dinero" placeholder="S/ 600.00" control={control} type="number" error={errors.money} />
         </fieldset>
         <button
-          className="bg-lime-400 w-full px-4 py-3 font-semibold text-xl text-lime-900 rounded-md transition-colors
-          hover:bg-lime-600 hover:text-lime-200"
+          className="w-full px-4 py-3 font-semibold text-xl text-gray-200 bg-black rounded-md transition-colors
+          hover:bg-black/80 hover:scale-105"
         >
           Agregar
         </button>

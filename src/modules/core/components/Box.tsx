@@ -5,7 +5,7 @@ interface BoxProps {
 
 export const Box = ({ children, className }: BoxProps) => {
   return (
-    <div className={`bg-lime-100 rounded-lg shadow-md p-4 m-2 ${className}`}>
+    <div className={`bg-white border-[1px] border-gray-300 rounded-lg p-4 m-2 ${className}`}>
       {children}
     </div>
   )

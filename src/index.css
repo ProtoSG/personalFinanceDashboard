@@ -17,10 +17,9 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background: #F7FEE7;
   max-height: 100dvh;
-  max-width: 720px;
   margin: 0 auto;
+  background: #e5e7eb;
 }
 
 input::-webkit-outer-spin-button,

@@ -4,7 +4,7 @@ import { ItemTransaction } from "./components";
 
 export const TransactionList = () => {
 
-  const { items } = useItem()
+  const { items } = useItem();
 
   return (
     <Box className="row-span-2 ">
