@@ -29,12 +29,12 @@ El **Personal Finance Dashboard** es una aplicación web que permite a los usuar
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/personal-finance-dashboard.git
+   git clone https://github.com/ProtoSG/personalFinanceDashboard.git
    ```
 
 2. Navega al directorio del proyecto:
    ```bash
-   cd personal-finance-dashboard
+   cd personalFinanceDashboard
    ```
 
 3. Instala las dependencias:
