@@ -43,7 +43,7 @@ export const BalanceSheet = () => {
   };
 
   return (
-    <Box >
+    <Box className="flex flex-col gap-4">
       <Title>Balance General</Title>
       <div className="flex h-[90%] items-start justify-center">
         <Doughnut

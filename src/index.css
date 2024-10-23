@@ -17,9 +17,8 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  max-height: 100dvh;
   margin: 0 auto;
-  background: #e5e7eb;
+  background: white;
 }
 
 input::-webkit-outer-spin-button,
@@ -30,4 +29,15 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance:textfield; /* Firefox */ 
+}
+
+/* Estilos para el scroll */
+*::-webkit-scrollbar
+{
+    width: 8px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 12px;
 }
