@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { ItemModel } from "../models/item.model";
+import { loadFromLocalStorage, saveToLocalStorage } from "../../../services/localStorageActions";
 
 interface ItemProps {
   items: ItemModel[];
@@ -11,15 +12,6 @@ interface ItemProps {
   expense: number;
   setExpense: (expense: number) => void;
 }
-
-const loadFromLocalStorage = <T>(key: string, defaultValue: T) => {
-  const storedValue = localStorage.getItem(key);
-  return storedValue ? JSON.parse(storedValue) : defaultValue;
-};
-
-const saveToLocalStorage = (key: string, value: any) => {
-  localStorage.setItem(key, JSON.stringify(value));
-};
 
 export const useItem = create<ItemProps>((set) => ({
   items: loadFromLocalStorage<ItemModel[]>("items", []),
