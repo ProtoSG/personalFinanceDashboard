@@ -4,6 +4,7 @@ import { DataInformation } from "./modules/dataInformation/DataInformation"
 import { IncomeExpense } from "./modules/incomeExpense/IncomeExpense"
 import { TransactionForm } from "./modules/transactionForm/TransactionForm"
 import { TransactionList } from "./modules/transactionList/TransactionList"
+import { useEffect } from "react"
 
 function App() {
   return (
@@ -17,7 +18,6 @@ function App() {
         <TransactionList />
         <BalanceSheet />
         <IncomeExpense />
-        <div className="min-h-20 w-full"></div>
       </div>
       <Toaster richColors />
     </main>
